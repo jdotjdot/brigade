@@ -220,6 +220,10 @@ func (c *Controller) workerEnv(project, build *v1.Secret) []v1.EnvVar {
 		},
 		{Name: "BRIGADE_SERVICE_ACCOUNT", Value: c.Config.WorkerServiceAccount},
 	}
+
+	// if BRIGADE_REPO_GITHUB_APP_IDENTIFIER, etc.
+	
+
 	return env
 }
 

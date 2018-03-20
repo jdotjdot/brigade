@@ -9,3 +9,8 @@
 /tests/testdata/*-generated.*
 /vendor/
 node_modules/
+
+
+# IDEs, etc.
+.vscode
+.idea
