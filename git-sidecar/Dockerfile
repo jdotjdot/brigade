@@ -1,9 +1,13 @@
 FROM alpine:3.7
 
 RUN apk update && apk add --no-cache \
+    bash \
     ca-certificates \
+    curl \
     git \
+    jq \
     openssh-client \
+    openssl \
     && update-ca-certificates
 
 COPY rootfs /
